@@ -2,3 +2,5 @@ node_modules/
 .project
 .sass-cache/
 **/*.bat
+npm-debug.log
+public/daten.html

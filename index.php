@@ -1,4 +1,5 @@
 <?php
+ob_start();
 require_once 'core/functions.php';
 ?>
 <!DOCTYPE html>
@@ -12,7 +13,7 @@ require_once 'core/functions.php';
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 		<link rel="shortcut icon" href="/favicon.ico">
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-		
+
 		<link rel="stylesheet" href="core/styles/style.css" type="text/css" media="screen" title="HaulyLab" charset="utf-8"/>
 	</head>
 	<body>
@@ -20,12 +21,14 @@ require_once 'core/functions.php';
 		<?php navigation(); ?>
 		<div class="haulylab-iframe">
 			<iframe class="haulylab-iframe" src="patterns/01-atoms/00-meta/01-head.php" frameborder="0"></iframe>
-			
 		</div>
 		<!-- /.haulylab-iframe -->
-		
-		
+
 		<script src="core/javascript/output.min.js"></script>
-		
+
 	</body>
 </html>
+
+<?php 
+	 require_once 'core/builds/static-files/static-files.php';
+?>
