@@ -1,0 +1,23 @@
+.haulylab-iframe {
+    position : absolute;
+    top: 1.3em;
+    bottom: 0;
+    height : 0;
+    overflow : hidden;
+    width : 100%;
+    height : auto;
+    background : lighten(#1f1f1f, 80);
+    
+    iframe {
+        position : absolute;
+        top : 0;
+        left : 0;
+        width : 100%;
+        height : 100%;
+    }
+    
+    /* ratio 4x3 */
+    .embed-container.ratio4x3 {
+        padding-bottom : 75%;
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "haulylab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HaulyShit/HaulyLab.git"
+  },
+  "author": "Janis Hau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HaulyShit/HaulyLab/issues"
+  },
+  "homepage": "https://github.com/HaulyShit/HaulyLab#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

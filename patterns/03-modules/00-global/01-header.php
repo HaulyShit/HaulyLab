@@ -1,0 +1,1 @@
+<?php require_once '../../01-atoms/00-head.php'; ?>

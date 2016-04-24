@@ -1,0 +1,1 @@
+<input type="email" name="email" placeholder="email" id="input_email"/>

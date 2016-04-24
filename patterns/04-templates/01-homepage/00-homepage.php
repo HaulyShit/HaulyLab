@@ -1,0 +1,1 @@
+<?php require_once '../../03-modules/01-homepage/00-homepage.php'; ?>
