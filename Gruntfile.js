@@ -95,7 +95,7 @@ module.exports = function(grunt) {
 				files : [{
 					expand : true,
 					cwd : 'app/',
-					src : ['*.php'],
+					src : ['patterns/03-modules/00-global/01-header.php'],
 					dest : 'build',
 					ext : '.html'
 				}]
