@@ -53,7 +53,7 @@ module.exports = function(grunt) {
 					style : 'compressed'
 				},
 				files : {
-					'assets/css/style.css' : ['assets/scss/**/*.scss']
+					'assets/css/style.css' : ['assets/scss/**/*']
 				}
 			},
 
@@ -108,6 +108,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-php2html');
 	// Default task(s).
-	grunt.registerTask('default', ['watch:devphp', 'watch:devsass', 'watch:devuglify']);
+	grunt.registerTask('default', ['sass:dev', 'watch:devphp', 'watch:devsass', 'watch:devuglify']);
 	grunt.registerTask('lab', ['sass:lab', 'uglify:lab', 'watch:labjs', 'watch:labsass']);
 };
