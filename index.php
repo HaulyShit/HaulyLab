@@ -1,5 +1,5 @@
 <?php
-ob_start();
+// ob_start();
 require_once 'core/functions.php';
 ?>
 <!DOCTYPE html>
@@ -20,7 +20,7 @@ require_once 'core/functions.php';
 
 		<?php navigation(); ?>
 		<div class="haulylab-iframe">
-			<iframe class="haulylab-iframe" src="patterns/01-atoms/00-meta/01-head.php" frameborder="0"></iframe>
+			<iframe src="patterns/01-atoms/00-meta/01-head.php" frameborder="0"></iframe>
 		</div>
 		<!-- /.haulylab-iframe -->
 
@@ -28,7 +28,3 @@ require_once 'core/functions.php';
 
 	</body>
 </html>
-
-<?php 
-	 require_once 'core/builds/static-files/static-files.php';
-?>

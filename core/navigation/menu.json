@@ -7,8 +7,12 @@
 					"dirurl": "#",
 					"links": [
 						{
-							"url": "url",
-							"value": "value"
+							"url": "atoms/eg",
+							"value": "atoms/eg"
+						},
+						{
+							"url": "atoms/eg2",
+							"value": "atoms/eg2"
 						}
 					]
 				},
@@ -17,8 +21,12 @@
 					"dirurl": "#",
 					"links": [
 						{
-							"url": "url",
-							"value": "value"
+							"url": "molecules/eg",
+							"value": "molecules/eg"
+						},
+						{
+							"url": "molecules/eg2",
+							"value": "molecules/eg2"
 						}
 					]
 				},
@@ -27,8 +35,12 @@
 					"dirurl": "#",
 					"links": [
 						{
-							"url": "url",
-							"value": "value"
+							"url": "modules/eg",
+							"value": "modules/eg"
+						},
+						{
+							"url": "modules/eg2",
+							"value": "modules/eg2"
 						}
 					]
 				}

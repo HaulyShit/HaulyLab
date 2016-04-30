@@ -12,6 +12,8 @@ function navigation() {
 		} else {
 			require_once 'navigation_json.php'; 			
 		}
+		
+		require_once 'navigation_actions.php';
 	
 	?>
 	

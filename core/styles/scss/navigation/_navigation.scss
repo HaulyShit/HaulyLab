@@ -7,6 +7,8 @@
     padding: 0;
     float: left;
     
+    text-transform: uppercase;
+    
     background: #1f1f1f;
     width: 100%;
     color: lighten(#1f1f1f, 40);
@@ -68,6 +70,18 @@
                     position: relative;
                     display: none;
                 }
+            }
+        }
+    }
+    
+    &--action {
+        float: right;
+        
+        li:last-child {
+            
+            ul {
+                left: initial;
+                right: 0;
             }
         }
     }
