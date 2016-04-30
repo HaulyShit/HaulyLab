@@ -18,7 +18,7 @@ function loadSite() {
 
 function printSize($width, $height) {
 	$('.haulylab-viewport--size').html($width + '*' + $height);
-	console.log($width + '*' + $height);
+	// console.log($width + '*' + $height);
 }
 
 function randomWidth($start, $end) {
@@ -28,7 +28,7 @@ function randomWidth($start, $end) {
 		    nWidth = Math.floor(Math.random() * $end) + $start;
 	} else if ($end === undefined) {
 		$end = "";
-		var nWidth = Math.floor(Math.random()) + $start;
+		var nWidth = Math.floor(Math.random() * (Math.floor($(window).width()) - Math.floor($start) + 1)) + Math.floor($start);
 	} else {
 		var nWidth = Math.floor(Math.random() * (Math.floor($end) - Math.floor($start) + 1)) + Math.floor($start);
 
@@ -91,6 +91,7 @@ $(function() {
 			"width" : nWidth,
 			"margin-left" : (nWidth / 2) * (-1)
 		});
+		
 		
 		printSize( nWidth, $('.haulylab-iframe iframe').height() );
 
