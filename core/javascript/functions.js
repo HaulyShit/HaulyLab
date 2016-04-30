@@ -38,11 +38,19 @@ function randomWidth($start, $end) {
 
 }
 
+function _blank() {
+	var site = location.hash;
+	site = site.substr(1, site.length - 1);
+	
+	$('.haulylab-blank').attr('href', site);
+}
+
 loadSite();
 ///********************************************************************************
 // * jQuery Document ready
 ///*******************************************************************************/
 $(function() {
+	_blank();
 
 	/********************************************************************************
 	 *      ___  __     __  ____   __   __      _  _   __   ____  ____
@@ -66,14 +74,17 @@ $(function() {
 	 *
 	 *******************************************************************************/
 
-	$haulyLabMenuLink.click(function(e) {
+	$haulyLabMenuLink.not(".haulylab-blank").click(function(e) {
 		e.preventDefault();
 
 		var href = $(this).attr('href');
 
 		if (href != '#') {
+			
 			loadIframe("haulylab-iframe iframe", href);
 			window.location.hash = href;
+			_blank();
+			
 		}
 
 	});

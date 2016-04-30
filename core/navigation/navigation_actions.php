@@ -28,7 +28,7 @@
 		<ul>
 			<li><a href="">Annotations</a></li>
 			<li><a href="">Code</a></li>
-			<li><a href="" target="_blank">Open in a new Window</a></li>
+			<li><a href="" target="_blank" class="haulylab-blank">Open in a new Window</a></li>
 		</ul>
 	</li>
 	
