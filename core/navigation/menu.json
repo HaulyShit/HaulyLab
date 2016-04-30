@@ -1,0 +1,38 @@
+{
+	"menu": [
+		{
+			"dir": [
+				{
+					"dirname": "atoms",
+					"dirurl": "#",
+					"links": [
+						{
+							"url": "url",
+							"value": "value"
+						}
+					]
+				},
+				{
+					"dirname": "molecules",
+					"dirurl": "#",
+					"links": [
+						{
+							"url": "url",
+							"value": "value"
+						}
+					]
+				},
+				{
+					"dirname": "modules",
+					"dirurl": "#",
+					"links": [
+						{
+							"url": "url",
+							"value": "value"
+						}
+					]
+				}
+			]
+		}
+	]
+}

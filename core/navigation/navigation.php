@@ -4,7 +4,16 @@ function navigation() {
 
 <nav class="haulylab-menu">
 	
-	<?php require_once 'navigation_scan-files.php'; ?>
+	<?php
+		global $menuJson;
+	
+		if ( $menuJson === FALSE ) {
+			require_once 'navigation_scan-files.php'; 
+		} else {
+			require_once 'navigation_json.php'; 			
+		}
+	
+	?>
 	
 </nav>
 

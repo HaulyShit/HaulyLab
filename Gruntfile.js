@@ -30,6 +30,11 @@ module.exports = function(grunt) {
 			/*
 			 * LAB-WATCHER
 			 */
+			lab : {
+				files : '**/*',
+				tasks : ['labjs','labsass','labphp']
+			},
+			
 			labjs : {
 				files : 'core/**/functions.js',
 				tasks : ['uglify:lab']
@@ -38,6 +43,11 @@ module.exports = function(grunt) {
 			labsass : {
 				files : 'core/**/*.scss',
 				tasks : ['sass:lab']
+			},
+
+			labphp : {
+				files : '**/*.php',
+				tasks : ['']
 			},
 
 			/*
@@ -109,5 +119,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-php2html');
 	// Default task(s).
 	grunt.registerTask('default', ['sass:dev', 'watch:devphp', 'watch:devsass', 'watch:devuglify']);
-	grunt.registerTask('lab', ['sass:lab', 'uglify:lab', 'watch:labjs', 'watch:labsass']);
+	grunt.registerTask('lab', ['sass:lab', 'uglify:lab', 'watch:lab']);
 };
