@@ -41,8 +41,20 @@ function randomWidth($start, $end) {
 function _blank() {
 	var site = location.hash;
 	site = site.substr(1, site.length - 1);
-	
+
 	$('.haulylab-blank').attr('href', site);
+}
+
+function randomFullWidth() {
+
+	nWidth = randomWidth(0, $(window).width());
+
+	$('.haulylab-iframe iframe').css({
+		"width" : nWidth,
+		"margin-left" : (nWidth / 2) * (-1)
+	});
+
+	printSize(nWidth, $('.haulylab-iframe iframe').height());
 }
 
 loadSite();
@@ -63,7 +75,8 @@ $(function() {
 	var $haulyLab			= jQuery('.haulylab'),
 	    $haulyLabIframe 	= jQuery('.haulylab-iframe iframe'),
 	    $haulyLabMenu		= jQuery('.haulylab-menu'),
-	    $haulyLabMenuLink	= jQuery('.haulylab-menu a');
+	    $haulyLabMenuLink	= jQuery('.haulylab-menu a'),
+	    disco				= "";
 
 	/********************************************************************************
 	 * @formatter:on
@@ -80,11 +93,11 @@ $(function() {
 		var href = $(this).attr('href');
 
 		if (href != '#') {
-			
+
 			loadIframe("haulylab-iframe iframe", href);
 			window.location.hash = href;
 			_blank();
-			
+
 		}
 
 	});
@@ -102,9 +115,24 @@ $(function() {
 			"width" : nWidth,
 			"margin-left" : (nWidth / 2) * (-1)
 		});
-		
-		
-		printSize( nWidth, $('.haulylab-iframe iframe').height() );
+
+		printSize(nWidth, $('.haulylab-iframe iframe').height());
+
+	});
+
+	$('.disco').click(function() {
+
+		if ($(this).hasClass('active')) {
+
+			$(this).removeClass('active');
+			clearInterval(disco);
+
+		} else {
+
+			$(this).addClass('active');
+			disco = setInterval(randomFullWidth, 2000);
+
+		}
 
 	});
 
