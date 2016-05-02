@@ -1,6 +1,6 @@
 <ul class="haulylab-menu--action">
 	<li>
-		<a href="#">Size <span class="haulylab-viewport--size">1920*1080</span></a>
+		<span>Size</span> <span class="haulylab-viewport--size">1920*1080</span>
 	</li>
 	<li>
 		<a href="#" class="disco">Disco</a>

@@ -103,23 +103,31 @@ $(function() {
 	});
 
 	printSize($haulyLabIframe.width(), $haulyLabIframe.height());
-
+	///********************************************************************************
+	// * BREAKPOINT action
+	///*******************************************************************************/
 	$('.breakpoint').click(function() {
 
+		// Catch start and end points
 		$start = $(this).attr('data-breakpoint-start');
 		$end = $(this).attr('data-breakpoint-end');
 
+		// Generate a random size
 		nWidth = randomWidth($start, $end);
 
+		// Give the iframe the new size and placed the iframe in the middle of the window
 		$('.haulylab-iframe iframe').css({
 			"width" : nWidth,
 			"margin-left" : (nWidth / 2) * (-1)
 		});
 
+		// Print the new size
 		printSize(nWidth, $('.haulylab-iframe iframe').height());
 
 	});
-
+	///********************************************************************************
+	// * DISCO mode
+	///*******************************************************************************/
 	$('.disco').click(function() {
 
 		if ($(this).hasClass('active')) {
@@ -129,9 +137,10 @@ $(function() {
 
 		} else {
 
+			randomFullWidth();
 			$(this).addClass('active');
 			disco = setInterval(randomFullWidth, 2000);
-
+			
 		}
 
 	});

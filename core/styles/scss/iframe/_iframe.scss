@@ -21,12 +21,11 @@
         border-left: 2px solid lighten(#1f1f1f, 20);
         border-right: 2px solid lighten(#1f1f1f, 20);
         
-        -webkit-transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        -ms-transition: all 1s ease;
-        -o-transition: all 1s ease;
-        
-        transition: all 1s ease;
+        -webkit-transition: all .25s ease;
+        -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+        -o-transition: all .25s ease;
+        transition: all .25s ease;
         
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
